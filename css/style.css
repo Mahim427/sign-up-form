@@ -1,0 +1,120 @@
+@import "modern-normalize.css";
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("../Norse-Bold.otf");
+    /*font-weight: 100 900;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --btn-color: #596D48;
+    --left-pad: 50px;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.image-sec {
+    background-image: url("../leaf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 35%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Norse Bold", cursive;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    margin-top: 200px;
+}
+
+.form-sec {
+    background-color: #e5f2ff;
+    height: 100vh;
+    width: 65%;
+}
+
+.main-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 63%;
+    padding-left: var(--left-pad);
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.main-text p {
+    margin-top: 16px;
+}
+
+fieldset {
+    background-color: white;
+    border: none;
+    padding: 30px var(--left-pad);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flex-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-group > div {
+    margin-right: var(--left-pad);
+    margin-top: 20px;
+}
+
+div label {
+    display: block;
+}
+
+div input {
+    font-size: 1.6rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+div input:focus {
+    border: 1px solid blue;
+    box-shadow: 1px 1px 5px grey;
+}
+
+div input:invalid {
+    border: 1px solid red;
+}
+
+button {
+    margin: 30px var(--left-pad);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 40px;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-sec > p {
+    margin-left: var(--left-pad);
+    font-weight: bold;
+}
+
+.form-sec > p > a {
+    color: var(--btn-color);
+    text-decoration: none;
+}
